@@ -1,5 +1,4 @@
 {
-  
   "name": "graphql",
   "version": "1.0.0",
   "main": "index.js",
@@ -12,7 +11,8 @@
   "description": "",
   "dependencies": {
     "apollo-server": "^3.6.2",
-    "graphql": "^16.2.0"
+    "graphql": "^16.2.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

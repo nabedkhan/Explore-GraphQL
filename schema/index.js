@@ -8,6 +8,11 @@ const typeDefs = gql`
     category(id: ID!): Category
   }
 
+  type Mutation {
+    addNewCategory(data: AddCategoryInput!): Category!
+    deleteCategory(id: ID!): [Category!]!
+  }
+
   type Product {
     id: ID!
     name: String!
@@ -36,6 +41,10 @@ const typeDefs = gql`
   input ProductFiltered {
     onSale: Boolean
     avgRating: Int
+  }
+
+  input AddCategoryInput {
+    name: String!
   }
 `;
 
